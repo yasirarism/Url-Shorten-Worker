@@ -10,7 +10,7 @@
     else if(window.screen.width<=769)
     document.getElementsByTagName('meta')['viewport'].content="initial-scale=0.6, maximum-scale=1.0, minimum-scale=0.6, user-scalable=no"
   </script>
-  <title>Shorter Url</title>
+  <title>URL Shortener</title>
   <style>
     * {
       margin: 0;
@@ -172,6 +172,15 @@ color: #3F76FF;
       }
     }  */
   </style>
+  
+<script language="JavaScript">
+var password;
+var pass1="sopaten07";
+password=prompt('Silahkan masukkan password untuk akses web URL Shortener ini!. Jika salah akan diredirect ke github saya','');
+if (password!=pass1)
+   {window.location="https://github.com/yasirarism";}
+</script>
+  
 </head>
 <body>
   <div class="card">
@@ -181,15 +190,15 @@ color: #3F76FF;
     
     <div class="card-body">
         
-      <h5 class="bigtitle">Shorten your URLs !</h5>
+      <h5 class="bigtitle">Pendekkan URL kamu !</h5>
       
-      <h5 class="card-title">Please enter the long URL to be shortened :</h5>
+      <h5 class="card-title">Silahkan masukkan URL yang ingin dipendekkan :</h5>
       <div class="formm">
-        <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
+        <input type="text" class="form-control" placeholder="Contoh: https://google.com/" id="text">
         <button class="btn-cus" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
       </div>    
       <div class="card-text">
-        Powered by <a href="https://github.com/xyTom/Url-Shorten-Worker/" target="_self">xyTom</a>
+        Github <a href="https://github.com/yasirarism/" target="_self">Yasir Aris M</a>
       </div>
       <p id="notice"></p>             
     </div>
@@ -206,7 +215,7 @@ color: #3F76FF;
         <div class="modal-body" id="result">No Result</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>    
         </div>
       </div>
     </div>
